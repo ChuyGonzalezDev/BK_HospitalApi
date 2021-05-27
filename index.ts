@@ -3,6 +3,7 @@ import express from 'express';
 import cors from 'cors';
 import jwt from 'jsonwebtoken';
 import path from 'path';
+
 import { dbConnection } from './db/MongoConnection';
 import { authRouter } from './routes/auth';
 
@@ -15,6 +16,10 @@ async function main() {
     /** Configuración de Puerto */
     const port = process.env.PORT;
 
+    /** Conexión a BD */
+    let db = process.env.MONGO_URL;    
+    dbConnection(db);
+
     /** Configuración CORS */
     app.use(cors());
 
@@ -24,14 +29,11 @@ async function main() {
     /** Lectura y parseo del body */
     app.use(express.json());
 
-    /** Rutas de API */    
+    /** Rutas de API */
     app.use('/api/login', authRouter);
 
     /** Escucha el puerto en el que se ejecuta la API */
     app.listen(port, () => console.log(`Server running on port ${port} 🔥`));
-
-    /** Conexión a BD */
-    //dbConnection();    
 }
 
 main();

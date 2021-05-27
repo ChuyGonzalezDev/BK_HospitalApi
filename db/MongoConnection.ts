@@ -1,25 +1,24 @@
 import mongoose from 'mongoose';
 
-const dbConnection = () => {
-  try {
-    const db = 'mongodb://localhost:27017/test';
-    mongoose.connect(db, {
+const dbConnection = async(db: any) => {
+  try {     
+    await mongoose.connect(db, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
       useCreateIndex: true,
     }).then(() => {
-      return console.info(`Successfully connected to ${db}`);
+      return console.info(`Conectado con éxito a MongoDB`);
     }).catch(error => {
-      console.error('Error connecting to database: ', error);
+      console.error('Error al conectarse a la base de datos: ', error);
       return process.exit(1);
     });
     
   } catch (error) {
-    console.log(error);
-    throw new Error("Error a la hora de inicializad DB");
+    console.error(error);
+    throw new Error(`Error al conectarse a la base de datos: ${error}`);
   }
 };
 
-//mongoose.connection.on('disconnected', dbConnection);
+mongoose.connection.on('disconnected', dbConnection);
 
 export { dbConnection };
