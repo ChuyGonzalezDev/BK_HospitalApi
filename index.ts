@@ -29,7 +29,7 @@ async function main() {
     /** Lectura y parseo del body */
     app.use(express.json());
 
-    /** Rutas de API */
+    /** Rutas API */
     app.use('/api/login', authRouter);
 
     /** Escucha el puerto en el que se ejecuta la API */
