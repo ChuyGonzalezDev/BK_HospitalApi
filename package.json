@@ -1,0 +1,37 @@
+{
+  "name": "bk_hospitalapi",
+  "version": "1.0.0",
+  "description": "API Hospital",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.ts",
+    "start": "node index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChuyGonzalez/BK_HospitalApi.git"
+  },
+  "author": "Jesús González",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-validator": "^6.11.1",
+    "jsonwebtoken": "^8.5.1",
+    "typescript": "^4.3.2"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.10",
+    "@types/express": "^4.17.12",
+    "@types/jsonwebtoken": "^8.5.1",
+    "@types/mongoose": "^5.10.5",
+    "bcryptjs": "^2.4.3",
+    "nodemon": "^2.0.7",
+    "ts-node": "^10.0.0"
+  },
+  "bugs": {
+    "url": "https://github.com/ChuyGonzalez/BK_HospitalApi/issues"
+  },
+  "homepage": "https://github.com/ChuyGonzalez/BK_HospitalApi#readme"
+}
