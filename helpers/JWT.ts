@@ -1,11 +1,12 @@
 import jwt from 'jsonwebtoken';
 
-function generateJWT(uid: any, name: string, seed: any) {
-    const payload = { uid, name };
-    const secret = seed;
+require('dotenv').config();
 
+function generateJWT(uid: any, name: string) {
+    const payload = { uid, name };
+    
     return new Promise((resolve, reject) => {
-        jwt.sign(payload, secret, {
+        jwt.sign(payload, process.env.SECRETPRIVATEKEY || '', {
             expiresIn: '24h',
         }, (error, token) => {
             if (error) {
