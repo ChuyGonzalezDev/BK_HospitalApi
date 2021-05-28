@@ -1,23 +1,27 @@
 /** Importaciones */
 import express from 'express';
 import cors from 'cors';
-import jwt from 'jsonwebtoken';
-import path from 'path';
 
 import { dbConnection } from './db/MongoConnection';
 import { authRouter } from './routes/auth';
+import { validateJWT } from './middlewares/ValidateToken';
 
 require('dotenv').config();
 
 async function main() {
+
+    validateJWT;
+    /** Llaves de Configuración */
+
+    /** Puerto */
+    const port = process.env.PORT;
+    /** BD */
+    const db = process.env.MONGODB_CNN;
+
     /** Crear servidor/app de Express */
     const app = express();
 
-    /** Configuración de Puerto */
-    const port = process.env.PORT;
-
     /** Conexión a BD */
-    let db = process.env.MONGO_URL;    
     dbConnection(db);
 
     /** Configuración CORS */
