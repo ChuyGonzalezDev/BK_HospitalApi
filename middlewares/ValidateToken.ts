@@ -4,9 +4,9 @@ import User from '../models/User';
 
 require('dotenv').config();
 
-const validateJWT = async(req: any, res = response, next: () => void) => {
+async function validateJWT(req: any, res = response, next: () => void) {
     type Decoded = {
-        uid: string;
+        id: string;
         name: string;
     };
 
@@ -14,7 +14,7 @@ const validateJWT = async(req: any, res = response, next: () => void) => {
     const token = req.header('token');
 
     if (!token) {
-        return res.status(401).json({            
+        return res.status(401).json({
             message: 'No hay token en la petición.'
         });
     }
@@ -22,15 +22,15 @@ const validateJWT = async(req: any, res = response, next: () => void) => {
     try {
         const decoded = jwt.verify(token, process.env.SECRETPRIVATEKEY || '');
         let _decoded = <Decoded>decoded;
-        req.uid = _decoded.uid;
+        req.id = _decoded.id;
         req.name = _decoded.name;
 
-        /** Busca el usuario que correspopnda al UID */
-        const user = await User.findById(req.uid);        
-        
-        if(!user){
+        /** Busca el usuario que correspopnda al id */
+        const user = await User.findById(req.id);
+
+        if (!user) {
             return res.status(401).json({
-                message: `Token no es válido. - [${req.uid}].`
+                message: `Token no es válido. - [${req.id}].`
             });
         }
 
@@ -41,7 +41,7 @@ const validateJWT = async(req: any, res = response, next: () => void) => {
             });
         }
 
-        req.uid = user.id;
+        req.id = user.id;
         req.name = user.name;
         req.user = user;
 
@@ -49,8 +49,8 @@ const validateJWT = async(req: any, res = response, next: () => void) => {
         next();
     } catch (error) {
         return res.status(401).json({
-            ok: false,
-            msg: 'Token no válido.'
+            status: false,
+            message: 'Token no válido.'
         });
     }
 };

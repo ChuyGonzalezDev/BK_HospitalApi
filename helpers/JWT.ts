@@ -2,8 +2,8 @@ import jwt from 'jsonwebtoken';
 
 require('dotenv').config();
 
-function generateJWT(uid: any, name: string) {
-    const payload = { uid, name };
+function generateJWT(id: any, name: string) {
+    const payload = { id, name };
     
     return new Promise((resolve, reject) => {
         jwt.sign(payload, process.env.SECRETPRIVATEKEY || '', {

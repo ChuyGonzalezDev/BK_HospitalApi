@@ -8,10 +8,8 @@ const authRouter = Router();
 
 /** Login de usuario */
 authRouter.post('/', [
-    check('email', 'El email es obligatorio y debe tener el formato correcto.').isEmail(),
-    check('password', 'La contraseña es obligatoria, debe tener al menos 8 caracteres, debe ser conformada por números, una letra mayúscula, una minúscula y un carácter especial.').isStrongPassword({
-        minLength: 8
-    }),
+    check('email', 'El email es obligatorio y debe tener el formato válido.').isEmail(),
+    check('password', 'La contraseña es obligatoria.').not().isEmpty(),
     validateFields
 ], login);
 

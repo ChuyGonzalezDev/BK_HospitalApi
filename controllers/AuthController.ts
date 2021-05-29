@@ -5,7 +5,7 @@ import { generateJWT } from '../helpers/JWT';
 
 require('dotenv').config();
 
-const login = async (req: any, res = response) => {
+async function login(req: any, res = response) {
     const { email, password } = req.body;
 
     try {
@@ -38,7 +38,7 @@ const login = async (req: any, res = response) => {
 
         res.json({
             status: true,
-            uid: user.id,
+            id: user.id,
             name: user.name,
             email,
             token
@@ -51,8 +51,8 @@ const login = async (req: any, res = response) => {
     }
 };
 
-const renewToken = async (req: any, res = response) => {
-    const { uid, name } = req;
+async function renewToken(req: any, res = response) {
+    const { id, name } = req;
     const user = req.user;
 
     /** Generar el JWT */
@@ -60,7 +60,7 @@ const renewToken = async (req: any, res = response) => {
 
     res.json({
         status: true,
-        uid: user.id,
+        id: user.id,
         name: user.name,
         email: user.email,
         token

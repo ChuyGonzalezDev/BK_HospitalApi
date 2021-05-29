@@ -25,4 +25,4 @@ Para realizar la conexión con la DB se utilizaron Singlethon, aplicando static,
 COLECCIÓN DE POSTMAN:
 https://www.getpostman.com/collections/1fc95d82d2436ba32b96
 
-Importas la colección, con el botón de "IMPORT", seguido de "Link", e ingresar URL en el campo y presionar Continuar
+Importas la colección, con el botón de "IMPORT", segido de "Link", e ingresar URL en el campo y presionar Continuar
