@@ -9,7 +9,7 @@ async function existEmail(email: string) {
     }
 };
 
-async function existUserById(id: string) {
+async function existUserById(id: any) {
     const existUser = await User.findById(id);
 
     if (!existUser) {

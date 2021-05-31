@@ -2,10 +2,9 @@
 import express from 'express';
 import cors from 'cors';
 
-import { dbConnection } from './db/MongoConnection';
 import { authRouter } from './routes/auth';
-import { validateJWT } from './middlewares/ValidateToken';
 import { userRouter } from './routes/Users';
+import { MongoConnection } from './db/Connection';
 
 require('dotenv').config();
 
@@ -13,14 +12,13 @@ async function main() {
     //validateJWT;    
     /** Puerto */
     const port = process.env.PORT;
-    /** BD */
-    const db = process.env.MONGODB_CNN;
-        
+            
     /** Crear servidor/app de Express */
     const app = express();
 
     /** Conexión a BD */
-    dbConnection(db);
+    await MongoConnection.connect();
+    //dbConnection();
 
     /** Configuración CORS */
     app.use(cors());

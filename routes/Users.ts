@@ -2,8 +2,8 @@ import { check } from 'express-validator';
 import { Router } from 'express';
 import { validateFields } from '../middlewares/ValidateFields';
 import { validateJWT } from '../middlewares/ValidateToken';
-import { getUsers, getUsersById, createUser } from '../controllers/UsersController';
-import { existEmail } from '../helpers/Validators';
+import { getUsers, getUsersById, createUser, updateUser, deleteUser } from '../controllers/UsersController';
+import { existEmail, existUserById } from '../helpers/Validators';
 
 const userRouter = Router();
 
@@ -11,11 +11,14 @@ userRouter.get('/',
     validateJWT,
     getUsers);
 
-userRouter.get('/:id',
+userRouter.get('/:id', [
     validateJWT,
-    getUsersById);
+    check('id', 'No es un ID válido').isMongoId(),
+    check('id').custom(existUserById),
+    validateFields
+], getUsersById);
 
-userRouter.post('/create', [
+userRouter.post('/', [
     check('name', 'El nombre es obligatorio.').not().isEmpty(),
     check('email', 'El email debe tener el formato válido.').isEmail(),
     check('email').custom(existEmail),
@@ -24,6 +27,19 @@ userRouter.post('/create', [
     }),
     validateFields
 ], createUser);
+
+userRouter.put('/:id', [
+    validateJWT,
+    check('id', 'No es un ID válido').isMongoId(),
+    check('id').custom(existUserById),
+    validateFields
+], updateUser)
+
+userRouter.delete('/:id', [
+    validateJWT,
+    check('id', 'No es un ID válido').isMongoId(),
+    check('id').custom(existUserById)
+], deleteUser);
 
 
 export { userRouter };

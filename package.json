@@ -14,24 +14,24 @@
   "author": "Jesús González",
   "license": "ISC",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-validator": "^6.11.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.12.12",
+    "ts-node": "^10.0.0",
+    "typescript": "^4.3.2"
+  },
+  "devDependencies": {
     "@types/bcryptjs": "^2.4.2",
     "@types/cors": "^2.8.10",
     "@types/dotenv": "^8.2.0",
     "@types/express": "^4.17.12",
     "@types/jsonwebtoken": "^8.5.1",
     "@types/mongoose": "^5.10.5",
-    "express-validator": "^6.11.1",
-    "typescript": "^4.3.2"
-  },
-  "devDependencies": {
-    "bcryptjs": "^2.4.3",
-    "cors": "^2.8.5",
     "dotenv": "^10.0.0",
-    "express": "^4.17.1",
-    "jsonwebtoken": "^8.5.1",
-    "mongoose": "^5.12.11",
-    "nodemon": "^2.0.7",
-    "ts-node": "^10.0.0"
+    "nodemon": "^2.0.7"
   },
   "bugs": {
     "url": "https://github.com/ChuyGonzalez/BK_HospitalApi/issues"

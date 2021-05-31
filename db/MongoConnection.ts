@@ -1,17 +1,26 @@
 import mongoose from 'mongoose';
+import dotenv from 'dotenv';
 
-const dbConnection = async (db: any) => {
+//SINGLETHON FOR CONNECTION
+dotenv.config();
+
+const dbConnection = async () => {
   try {
-    await mongoose.connect(db, { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true }).then(() => {
-      return console.info(`Conectado con éxito a MongoDB`);
-    }).catch(error => {
-      console.error(`Error de conexión a MongoDB: ${error}`);
-      return process.exit(1);
-    });
+    await mongoose.connect(process.env.MONGODB_CNN || '',
+      {
+        useNewUrlParser: true,
+        useUnifiedTopology: true,
+        useCreateIndex: true
+      }).then(() => {
+        return console.info(`Conectado con éxito a MongoDB a BD: ${mongoose.connection.db.databaseName}`);
+      }).catch(error => {
+        console.error(`Error de conexión a MongoDB: ${error}`);
+        return process.exit(1);
+      });
 
   } catch (error) {
     console.error(error);
-    throw new Error(`Error de conexión a MongoDB: ${error}`);    
+    throw new Error(`Error de conexión a MongoDB: ${error}`);
   }
 };
 
