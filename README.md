@@ -1,6 +1,6 @@
 # API Hospital
 
-![https://github.com/ChuyGonzalez](images/logo.jpeg);
+![https://github.com/ChuyGonzalez](images/logo.jpeg)
 
 ## Proyecto Final - **Back-End** robot
 
