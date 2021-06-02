@@ -9,7 +9,7 @@ _API Rest que contiene el CRUD para un HOSPITAL._
 - Se realizaron 4 controladores para MongoDB -> AuthController, UsersController, HospitalsController y DoctorsController.
 - En Validators se define la lógica intermedia para validar negocio del Controller.
 - El acceso a datos se encuentra implementado con Mongoose para MongoDB. Para realizar la conexión con la DB se utilizaron Singleton pattern, aplicando static, private, etc.
-- Se implemento un HTML para validar la API desde <http://localhost>.
+- Se implemento un HTML para validar la API desde <http://localhost/8080>.
 
 ## Construido con 🛠️
 
