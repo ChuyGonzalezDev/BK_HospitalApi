@@ -36,11 +36,11 @@ async function login(req: any, res = response) {
         /** Generar el JWT */
         const token = await generateJWT(user.id, user.name);
 
-        res.json({
-            status: true,
+        res.json({            
             id: user.id,
             name: user.name,
             email,
+            status: user.status,
             token
         });
 
@@ -58,11 +58,11 @@ async function renewToken(req: any, res = response) {
     /** Generar el JWT */
     const token = await generateJWT(user.id, user.name);
 
-    res.json({
-        status: true,
+    res.json({        
         id: user.id,
         name: user.name,
         email: user.email,
+        status: true,
         token
     });
 };

@@ -1,7 +1,6 @@
 import { response, request } from 'express';
 import User from '../models/User';
 import bcrypt from 'bcryptjs';
-import { generateJWT } from '../helpers/JWT';
 
 require('dotenv').config
 
@@ -52,7 +51,8 @@ async function createUser(req = request, res = response) {
 
         /** Respuesta exitosa */
         res.status(201).json({
-            user
+            user,
+            message: 'Creación de Usuario correctamente.'
         });
     } catch (error) {
         return res.status(500).json({
@@ -94,7 +94,7 @@ async function updateUser(req = request, res = response) {
 
 }
 
-/** Deshabilitar usuario */
+/** Deshabilitar Usuario */
 async function deleteUser(req = request, res = response) {
     const { id } = req.params;
 
@@ -108,11 +108,11 @@ async function deleteUser(req = request, res = response) {
                 email: userResponse.email,
                 status: false
             },
-            message: 'Se deshabilito el usuario correctamente.'
+            message: 'Se deshabilito el Usuario correctamente.'
         });
     } else {
         res.status(400).json({
-            message: 'Error al deshabilitar el usuario.'
+            message: 'Error al deshabilitar el Usuario.'
         });
     }
 }

@@ -1,16 +1,12 @@
 import mongoose, { Schema, Document } from 'mongoose';
-export interface IUser extends Document {
-    // firstName: string;
-    // lastName: string;    
+export interface IUser extends Document {    
     name: string;
     email: string;
     password: string;
     status?: boolean;
 };
 
-const UserSchema: Schema = new Schema({
-    // firstName: { type: String, required: true },
-    // lastName: { type: String, required: true },    
+const UserSchema: Schema = new Schema({       
     name: { type: String, required: [true, 'El nombre es obligatorios'] },
     email: { type: String, required: [true, 'El correo es obligatorio'], unique: true },    
     password: { type: String, required: true},
@@ -23,5 +19,5 @@ UserSchema.methods.toJSON = function() {
     return user;
 };
 
-/** Exporta el modelo y devuelve tu interfaz IUser */
+/** Exporta el modelo y devuelve su interfaz IUser */
 export default mongoose.model<IUser>('User', UserSchema);
