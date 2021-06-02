@@ -1,28 +1,64 @@
-# BK Hospital API
-## Proyecto Final - **Node.JS** :robot:
+# BK - API Hospital
+## Proyecto Final - **Back-End** :robot:
 
-CORRER ESTO EN SU DB
+_API Rest que contiene el CRUD para un HOSPITAL._
 
-CREATE TABLE users (id SERIAL, name VARCHAR(100), username VARCHAR(100), password VARCHAR(150));
+- Implementación de JWT para la seguridad en las peticiones de los métodos.
+- Se utilizó POO para el diseño de esta solución.
+- Se utilizaron Interfaces para poder definir el esquema y comportamiento de los Controladores.
+- Se realizaron 4 controladores para MongoDB -> AuthController, UsersController, HospitalsController y DoctorsController.
+- En Validators se define la lógica intermedia para validar negocio del Controller.
+- El acceso a datos se encuentra implementado con Mongoose para MongoDB. Para realizar la conexión con la DB se utilizaron Singleton pattern, aplicando static, private, etc.
+- Se implemento un HTML para validar la API desde <http://localhost>.
 
-PARA PODER CORRER ESTO, MODIFICAR EL ARCHIVO .env con los datos de sus servidores
+## Construido con 🛠️
 
-PARA IMPLEMENTAR LA PERSISTENCIA DE DATOS SE USARON LAS SIGUIENTES DEPENDENCIAS:
-Postgres: https://node-postgres.com/
-Mongo: https://www.npmjs.com/package/mongodb
+* [Node.Js](https://nodejs.org/en/) - El framework Node.Js.
+* [Mongoose](https://mongoosejs.com/) - ‎Modelado ‎‎de objetos MongoDB‎ elegante para ‎‎node.js‎
+* [TypeScript](https://www.typescriptlang.org/) - Tipeado de JavaScrit con ‎TypeScript.
 
-SE USARON INTERFACES PARA PODER DEFINIR EL COMPORTAMIENTO DE LOS REPOSITORIOS CON IUserRepository
+## Comenzando 🚀
 
-PARA ACCEDER A LAS IMPLEMENTACIONES CHECAR LAS CLASES UserMongoRepository y UserRepository
+_Estas instrucciones te permitirán obtener una copia del proyecto para el funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
 
-Se realizaron 2 controladores para hacer el ejemplo con Postgres y Mongo -> UsersController y UsersMongoController
+1. Clone the repo
+   ```sh
+   git clone https://github.com/ChuyGonzalez/BK_HospitalApi.git
+   ```
+2. Install NPM packages
+   ```sh
+   npm install
+   ```
 
-En UserApplication se define la lógica intermedia entre el repositorio y el controller, si se necesitará hacer otra tarea
-además de persistir datos, iría en la capa de aplicación.
+### Pre-requisitos 📋
+## Base de Datos
+Ejecutar los siguientes pasos y comandos en consola de MongoDB:
 
-Para realizar la conexión con la DB se utilizaron Singlethon, aplicando static, private, etc.
+1. Crear la Base de Datos con [MongoDB - Create Cluster](https://docs.atlas.mongodb.com/tutorial/create-mongodb-user-for-cluster).
+2. Comando para mostrar las Bases de Datos:
+    ```bash
+    db
+    ```
+3. Comando para seleccionar la Bases de Datos:
+    ```bash
+    use dbHospital;
+    ```
+4. Comando para crear la colección de Usuarios:
+    ```bash
+    db.createCollection("users");
+    ```
+5. Comando para crear la colección de Hospitales:
+   ```bash
+    db.createCollection("hospitals");
+    ```
+6. Comando para crear la colección de Doctores:
+   ```bash
+    db.createCollection("doctors");
+    ```
+## Environment
+_Modificar el archivo .env con tus datos a ocupar de Port, Conexión a BD y Secret Key._
 
-COLECCIÓN DE POSTMAN:
-https://www.getpostman.com/collections/1fc95d82d2436ba32b96
+## Documentación de API - POSTMAN:
+Colección Postman:
+<https://www.getpostman.com/collections/0f05ba9c7af36440faa7>
 
-Importas la colección, con el botón de "IMPORT", segido de "Link", e ingresar URL en el campo y presionar Continuar

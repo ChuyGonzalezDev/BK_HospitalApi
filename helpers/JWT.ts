@@ -11,8 +11,8 @@ function generateJWT(id: any, name: string) {
         }, (error, token) => {
             if (error) {
                 /** No valido */
-                console.log(error);
                 reject(error);
+                console.error(`Error al generar JWT: ${error}.`);
             } else {
                 /** Valido */
                 resolve(token);

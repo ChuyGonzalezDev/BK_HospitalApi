@@ -2,7 +2,7 @@ import { check } from 'express-validator';
 import { Router } from 'express';
 import { validateFields } from '../middlewares/ValidateFields';
 import { validateJWT } from '../middlewares/ValidateToken';
-import { get, getById, create, update, deleteHospital } from '../controllers/HospitalController';
+import { get, getById, create, update, deleteHospital } from '../controllers/HospitalsController';
 import { existHospital, existHospitalById } from '../helpers/Validators';
 
 const hospitalRouter = Router();

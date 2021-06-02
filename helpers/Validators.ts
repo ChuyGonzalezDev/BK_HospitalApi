@@ -23,7 +23,6 @@ async function existUserById(id: any) {
 /** Verificar existe Hospital */
 async function existHospital(name: string) {
     const exist = await Hospital.findOne({ name });
-    console.log(exist);
 
     if (exist) {
         throw new Error(`Hospital ya registrado con el nombre: ${name}.`);
@@ -43,7 +42,7 @@ async function existHospitalById(id: string) {
     }
 }
 
-/** Verificar existe email Usuario */
+/** Verificar existe email de Doctor */
 async function existDoctorEmail(email: string) {
     const existEmail = await Doctor.findOne({ email });
 
@@ -52,7 +51,7 @@ async function existDoctorEmail(email: string) {
     }
 };
 
-/** Verificar existe Hospital por Id */
+/** Verificar existe Doctor por Id */
 async function existDoctorById(id: string) {
     const exist = await Doctor.findById(id);
 
