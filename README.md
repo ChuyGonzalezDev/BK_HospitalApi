@@ -2,7 +2,7 @@
 
 ![https://github.com/ChuyGonzalez](images/logo.jpeg)
 
-## Proyecto Final - **Back-End** robot
+## Proyecto Final - **Back-End** :robot:
 
 **REST API Rest que contiene el CRUD para un HOSPITAL:** consulta, registro, actualización y borrado de Usuarios, Hospitales y Doctores.
 
@@ -137,7 +137,7 @@ Ejecutar los siguientes pasos y comandos en consola de MongoDB:
 
 ### Environment ⚙️
 
-**Modificar el archivo .env con tus datos a ocupar de Port, Conexión a BD y Secret Key.**
+**Modificar el archivo .env con tus datos a ocupar de Puerto, Conexión a BD y Secret Key.**
 
 ## Despliegue 📦
 
