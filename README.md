@@ -30,9 +30,9 @@
 
 ![Arquitectura](/images/arquitectura.png)
   
-- **Tabla de Documentación de Diseño de métodos** - [Descargar Excel](/documents/APIHospital.xlsx).
+- **Tabla de Documentación de Diseño de métodos** - [Descargar Excel](/Documents/APIHospital.xlsx).
 
-- **Diagrama de Clases de API** - [Descargar Diagrama](/documents/diagramClass.drawio).
+- **Diagrama de Clases de API** - [Descargar Diagrama](/Documents/diagramClass.drawio).
   
 - **Documentación de API con POSTMAN** - [Descargar POSTMAN](https://www.getpostman.com/collections/0f05ba9c7af36440faa7)
 
@@ -40,7 +40,7 @@
 
 ![Arquitectura](/images/DBHospital_ER.png)
 
-- **Documentación de Pruebas Unitarias de API con POSTMAN** - [Descargar JSON](/documents/ApiHospital.postman_test_run.json).
+- **Documentación de Pruebas Unitarias de API con POSTMAN** - [Descargar JSON](/Documents/ApiHospital.postman_test_run.json).
 
 ## Construido con 🛠️
 
