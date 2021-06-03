@@ -34,7 +34,7 @@
 
 - **Diagrama de Clases de API** - [Descargar Diagrama](/Documents/diagramClass.drawio).
   
-- **Documentación de API con POSTMAN** - 
+- **Documentación de API con POSTMAN**: 
 
 > - [Descargar POSTMAN](https://www.getpostman.com/collections/0f05ba9c7af36440faa7)
 
