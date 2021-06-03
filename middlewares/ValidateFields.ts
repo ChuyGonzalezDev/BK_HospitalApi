@@ -2,11 +2,11 @@ import { response } from 'express';
 import { validationResult } from 'express-validator';
 
 /** Valida campos del Request */
-const validateFields = (req: any, res = response, next: any) => {
+function validateFields(req: any, res = response, next: () => void) {
     const errors = validationResult(req);
     if (!errors.isEmpty()) {
         return res.status(400).json({
-            ok: false,
+            status: false,
             errors: errors.mapped()
         });
     }

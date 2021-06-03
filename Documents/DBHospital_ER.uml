@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>DATABASE</ID>
+  <OriginalElement>7baf6a8b-7f3a-46b9-8a0d-b00a5ead106f</OriginalElement>
+  <nodes>
+    <node x="-209.0" y="-53.0">7baf6a8b-7f3a-46b9-8a0d-b00a5ead106f.TABLE:dbHospital.users</node>
+    <node x="-6.0" y="-53.0">7baf6a8b-7f3a-46b9-8a0d-b00a5ead106f.TABLE:dbHospital.doctors</node>
+    <node x="241.0" y="-53.0">7baf6a8b-7f3a-46b9-8a0d-b00a5ead106f.TABLE:dbHospital.hospitals</node>
+  </nodes>
+  <notes />
+  <edges />
+  <settings layout="Hierarchic" zoom="1.0" showDependencies="false" x="76.0" y="137.5" />
+  <SelectedNodes>
+    <node>7baf6a8b-7f3a-46b9-8a0d-b00a5ead106f.TABLE:dbHospital.users</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Columns</Category>
+    <Category>Key columns</Category>
+    <Category>Virtual foreign keys</Category>
+  </Categories>
+</Diagram>
+

@@ -1,24 +1,26 @@
 /** Importaciones */
 import express from 'express';
 import cors from 'cors';
-import jwt from 'jsonwebtoken';
-import path from 'path';
 
-import { dbConnection } from './db/MongoConnection';
 import { authRouter } from './routes/auth';
+import { userRouter } from './routes/Users';
+import { MongoConnection } from './db/Connection';
+import { hospitalRouter } from './routes/Hospital';
+import { doctorRouter } from './routes/Doctor';
 
 require('dotenv').config();
 
 async function main() {
+    //validateJWT;    
+    /** Puerto */
+    const port = process.env.PORT;
+            
     /** Crear servidor/app de Express */
     const app = express();
 
-    /** Configuración de Puerto */
-    const port = process.env.PORT;
-
     /** Conexión a BD */
-    let db = process.env.MONGO_URL;    
-    dbConnection(db);
+    await MongoConnection.connect();
+    //dbConnection();
 
     /** Configuración CORS */
     app.use(cors());
@@ -29,8 +31,11 @@ async function main() {
     /** Lectura y parseo del body */
     app.use(express.json());
 
-    /** Rutas de API */
-    app.use('/api/login', authRouter);
+    /** Rutas API */
+    app.use('/login', authRouter);
+    app.use('/users', userRouter);
+    app.use('/hospitals', hospitalRouter);
+    app.use('/doctors', doctorRouter);
 
     /** Escucha el puerto en el que se ejecuta la API */
     app.listen(port, () => console.log(`Server running on port ${port} 🔥`));
