@@ -4,7 +4,7 @@
 
 ## Proyecto Final - **Back-End**
 
-**REST API Rest que contiene el CRUD para un HOSPITAL:** consulta, registro, actualización y borrado de Usuarios, Hospitales y Doctores.
+**REST API que contiene el CRUD para un HOSPITAL:** consulta, registro, actualización y borrado de Usuarios, Hospitales y Doctores.
 
 **Puntos importantes de la API:**
 
