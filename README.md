@@ -26,19 +26,21 @@
 
 ## Documentación de API
 
-- Diagrama de Arquitectura de API REST.
+- Diagrama de Arquitectura de API REST:
+
 ![Arquitectura](/images/arquitectura.png)
   
-- **Tabla de Documentación de Diseño de métodos** - [Excel](/Documents/APIHospital.xlsx).
+- **Tabla de Documentación de Diseño de métodos** - [Descargar Excel](/Documents/APIHospital.xlsx).
 
-- **Diagrama de Clases de API** - [Diagrama](/Documents/diagramClass.drawio).
+- **Diagrama de Clases de API** - [Descargar Diagrama](/Documents/diagramClass.drawio).
   
-- [**POSTMAN**](https://www.getpostman.com/collections/0f05ba9c7af36440faa7)
+- **Documentación de API con POSTMAN** - [Descargar POSTMAN](https://www.getpostman.com/collections/0f05ba9c7af36440faa7)
 
 - **Diagrama de Base de Datos ER**: Debido a que la BD es NoSQL, la relación en tablas es logico.
+
 ![Arquitectura](/images/DBHospital_ER.png)
 
-- [**Pruebas Unitarias**](/Documents/ApiHospital.postman_test_run.json)
+- **Documentación de Pruebas Unitarias de API con POSTMAN** - [Descargar JSON](/Documents/ApiHospital.postman_test_run.json).
 
 ## Construido con 🛠️
 
