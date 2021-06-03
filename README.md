@@ -10,19 +10,19 @@
 
 - Se incluye implementación de [JSON Web Tokens](https://jwt.io/) para la generación del token de seguridad e enviarlos en los métodos implementados.
 - Se utilizó POO para el diseño de esta solución.
-- Se realizaron 4 controladores para MongoDB -> [**AuthController**](controllers/AuthController.ts), [**UsersController**](controllers/UsersController.ts), [**HospitalsController**](controllers/HospitalsController.ts) y [**DoctorsController**](controllers/DoctorsController.ts).
+- Se realizaron 4 controladores para MongoDB -> [AuthController](controllers/AuthController.ts), [UsersController](controllers/UsersController.ts), [HospitalsController](controllers/HospitalsController.ts) y [DoctorsController](controllers/DoctorsController.ts).
 - Se utilizaron Interfaces para poder definir el esquema y comportamiento de los Controladores.
-- En [**Validators.ts**](helpers/Validators.ts) se definen reglas de negocio y lógica intermedia para validación en los controladores.
-- Se crearon **2 Middlewares**; [**ValidateToken.ts**](middlewares/ValidateToken.ts) que contiene la validación del token de seguridad recibido. Y [**ValidateFields.ts**](middlewares/ValidateFields.ts) que contiene la validación de los campos recibidos en los Request, mostrando los errores detectados si fuera el caso.
-- El acceso a datos se encuentra implementado con Mongoose para MongoDB. 
+- En [Validators.ts](helpers/Validators.ts) se definen reglas de negocio y lógica intermedia para validación en los controladores.
+- Se crearon **2 Middlewares**; [ValidateToken.ts](middlewares/ValidateToken.ts) que contiene la validación del token de seguridad recibido. Y [ValidateFields.ts](middlewares/ValidateFields.ts) que contiene la validación de los campos recibidos en los Request, mostrando los errores detectados si fuera el caso.
+- El acceso a datos se encuentra implementado con Mongoose para MongoDB.
 - Para realizar la conexión con la DB se utilizaron Singleton pattern, aplicando static, private, etc.
-- Se implemento un [**index.html**](public/index.html) para validar la API desde [**LocalHost**](http://localhost/4000).
+- Se implemento un [index.html](public/index.html) para validar la API desde [LocalHost](http://localhost/4000).
 
 ![Ejemplo Index](images/index.png)
 
 ## Proyecto Escrito 📖
 
-- Puedes encontrar la sección del [**Proyecto Escrito**](https://github.com/ChuyGonzalez/BK_HospitalApi/wiki/PROYECTO-ESCRITO) en la Wiki del proyecto.
+- Puedes encontrar la sección del [Proyecto Escrito](https://github.com/ChuyGonzalez/BK_HospitalApi/wiki/PROYECTO-ESCRITO) en la Wiki del proyecto.
 
 ## Documentación de API
 
