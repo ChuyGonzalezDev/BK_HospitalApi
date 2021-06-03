@@ -1,0 +1,414 @@
+{
+	"id": "a7d3acde-e2db-45d3-a9e1-934ee15ad6bd",
+	"name": "ApiHospital",
+	"timestamp": "2021-06-02T23:30:50.642Z",
+	"collection_id": "4b5f8f7c-c595-49b3-a924-1c9b3ddebbc7",
+	"folder_id": 0,
+	"environment_id": "29a37529-66da-4c7d-bbda-ea4053ac9ba7",
+	"totalPass": 0,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "6744aa3c-ac2b-4f5e-880c-c90e2ba52540",
+			"name": "Renovar Token",
+			"url": "http://localhost:4000/login/renew",
+			"time": 84,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				84
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "680f4898-8a20-4e03-b2be-da481f2a6535",
+			"name": "Login  Usuario",
+			"url": "http://localhost:4000/login",
+			"time": 171,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				171
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "5d0810eb-6a94-4861-b868-944f90b81b14",
+			"name": "Crear Usuario",
+			"url": "http://localhost:4000/users/",
+			"time": 82,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				82
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "8f19712a-c476-48fe-ada7-07313a1c18f9",
+			"name": "Obtener Usuarios",
+			"url": "http://localhost:4000/users?rows=10&from=0",
+			"time": 159,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				159
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "befc5543-1eb8-438c-8ed3-4dda20707b11",
+			"name": "Obtener Usuario por Id",
+			"url": "http://localhost:4000/users/60b70cc97995390d31770e39",
+			"time": 223,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				223
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "c4df9c2c-b89c-441c-852e-c78fbba7b4fa",
+			"name": "Actualizar Usuario",
+			"url": "http://localhost:4000/users/60b5201dde0bc0856adf94f0",
+			"time": 149,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				149
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "6cd21bfe-45f7-4c84-aa18-3ccb54f0b1a9",
+			"name": "Deshabilitar Usuario",
+			"url": "http://localhost:4000/users/60b5201dde0bc0856adf94f0",
+			"time": 236,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				236
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "f6d4d1de-f762-4f7e-a51b-4458a99cf0e9",
+			"name": "Crear Hospital",
+			"url": "http://localhost:4000/hospitals",
+			"time": 148,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				148
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "e7919717-ce05-453d-b7ad-a65478ec37bb",
+			"name": "Obtener Hospital por Id",
+			"url": "http://localhost:4000/hospitals/60b70da37995390d31770e3a",
+			"time": 220,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				220
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "d3f83dd2-b909-4486-a493-4fc6ffa314d3",
+			"name": "Actualizar Hospital",
+			"url": "http://localhost:4000/hospitals/60b6d989110dfcfea0167d1f",
+			"time": 229,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				229
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "6c325d98-a0be-4da7-a32a-2623b38cc5d1",
+			"name": "Obtener Hospitales",
+			"url": "http://localhost:4000/hospitals?rows=10&from=0",
+			"time": 146,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				146
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "e5e0ef3c-e529-47ab-a733-0ce1b99c3359",
+			"name": "Deshabilitar Hospital",
+			"url": "http://localhost:4000/hospitals/60b6d6fa110dfcfea0167d1e",
+			"time": 149,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				149
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "9211cbbf-3d3a-4bf3-bacf-dc1223dcd7e6",
+			"name": "Crear Doctor",
+			"url": "http://localhost:4000/doctors",
+			"time": 148,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				148
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "cbe72349-8f81-447f-9844-f51bbdee77a5",
+			"name": "Obtener Doctor  por Id",
+			"url": "http://localhost:4000/doctors/60b70dca7995390d31770e3b",
+			"time": 235,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				235
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "1204c368-0e08-4d6b-870e-516e86c3c4bc",
+			"name": "Actualizar Doctor",
+			"url": "http://localhost:4000/doctors/60b6dc99110dfcfea0167d22",
+			"time": 157,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				157
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "c54e28df-dc11-4a67-8f4c-01fc591bcb85",
+			"name": "Obtener Doctores",
+			"url": "http://localhost:4000/doctors?rows=10&from=0",
+			"time": 147,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				147
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "9c25f67c-bac3-4616-83b4-79ebac06c69e",
+			"name": "Deshabilitar Doctor",
+			"url": "http://localhost:4000/doctors/60b6e081fa409e02522b2d26",
+			"time": 147,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				147
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "ae240b56-cedb-4fa9-b793-ce216de42d38",
+			"name": "Test de API",
+			"url": "http://localhost:4000/",
+			"time": 6,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				6
+			],
+			"allTests": [
+				{}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 2836,
+	"collection": {
+		"requests": [
+			{
+				"id": "6744aa3c-ac2b-4f5e-880c-c90e2ba52540",
+				"method": "GET"
+			},
+			{
+				"id": "680f4898-8a20-4e03-b2be-da481f2a6535",
+				"method": "POST"
+			},
+			{
+				"id": "5d0810eb-6a94-4861-b868-944f90b81b14",
+				"method": "POST"
+			},
+			{
+				"id": "8f19712a-c476-48fe-ada7-07313a1c18f9",
+				"method": "GET"
+			},
+			{
+				"id": "befc5543-1eb8-438c-8ed3-4dda20707b11",
+				"method": "GET"
+			},
+			{
+				"id": "c4df9c2c-b89c-441c-852e-c78fbba7b4fa",
+				"method": "PUT"
+			},
+			{
+				"id": "6cd21bfe-45f7-4c84-aa18-3ccb54f0b1a9",
+				"method": "DELETE"
+			},
+			{
+				"id": "f6d4d1de-f762-4f7e-a51b-4458a99cf0e9",
+				"method": "POST"
+			},
+			{
+				"id": "e7919717-ce05-453d-b7ad-a65478ec37bb",
+				"method": "GET"
+			},
+			{
+				"id": "d3f83dd2-b909-4486-a493-4fc6ffa314d3",
+				"method": "PUT"
+			},
+			{
+				"id": "6c325d98-a0be-4da7-a32a-2623b38cc5d1",
+				"method": "GET"
+			},
+			{
+				"id": "e5e0ef3c-e529-47ab-a733-0ce1b99c3359",
+				"method": "DELETE"
+			},
+			{
+				"id": "9211cbbf-3d3a-4bf3-bacf-dc1223dcd7e6",
+				"method": "POST"
+			},
+			{
+				"id": "cbe72349-8f81-447f-9844-f51bbdee77a5",
+				"method": "GET"
+			},
+			{
+				"id": "1204c368-0e08-4d6b-870e-516e86c3c4bc",
+				"method": "PUT"
+			},
+			{
+				"id": "c54e28df-dc11-4a67-8f4c-01fc591bcb85",
+				"method": "GET"
+			},
+			{
+				"id": "9c25f67c-bac3-4616-83b4-79ebac06c69e",
+				"method": "DELETE"
+			},
+			{
+				"id": "ae240b56-cedb-4fa9-b793-ce216de42d38",
+				"method": "GET"
+			}
+		]
+	}
+}

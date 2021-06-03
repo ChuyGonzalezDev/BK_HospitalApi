@@ -20,6 +20,26 @@
 
 ![Ejemplo Index](images/index.png)
 
+## Proyecto Escrito 📖
+
+- Puedes encontrar la sección del [**Proyecto Escrito**](https://github.com/ChuyGonzalez/BK_HospitalApi/wiki/PROYECTO-ESCRITO) en la Wiki del proyecto.
+
+## Documentación de API
+
+- Diagrama de Arquitectura de API REST.
+![Arquitectura](/images/arquitectura.png)
+  
+- **Tabla de Documentación de Diseño de métodos** - [Excel](/Documents/APIHospital.xlsx).
+
+- **Diagrama de Clases de API** - [Diagrama](/Documents/diagramClass.drawio).
+  
+- [**POSTMAN**](https://www.getpostman.com/collections/0f05ba9c7af36440faa7)
+
+- **Diagrama de Base de Datos ER**: Debido a que la BD es NoSQL, la relación en tablas es logico.
+![Arquitectura](/images/DBHospital_ER.png)
+
+- [**Pruebas Unitarias**](/Documents/ApiHospital.postman_test_run.json)
+
 ## Construido con 🛠️
 
 - [Node.JS](https://nodejs.org/en/) - El framework Node.JS.
@@ -147,20 +167,12 @@ Para realiza el despligue por favor tome en cuenta los siguientes pasos: [Deploy
 
 Usamos [SemVer](http://semver.org/) para el versionado. Para ver todas las versiones disponibles, mira los [tags en este repositorio](https://github.com/ChuyGonzalez/BK_HospitalApi/tags).
 
-## Documentación de API
-
-[POSTMAN](https://www.getpostman.com/collections/0f05ba9c7af36440faa7)
-
-## Wiki 📖
-
-Puedes encontrar mucho más de cómo utilizar este proyecto en nuestra [Wiki](https://github.com/ChuyGonzalez/BK_HospitalApi/wiki)
-
 ## Autores ✒️
 
-- **Jesús González** - *Creación de Proyecto* - [ChuyGonzalez](https://github.com/ChuyGonzalez)
+- **Jesús González** - *Creación, diseño y desarrollo de Proyecto* - [**Chuy Gonzalez**](https://github.com/ChuyGonzalez).
 
 También puedes mirar la lista de todos los [contribuyentes](https://github.com/ChuyGonzalez/BK_HospitalApi/graphs/contributors) quíenes han participado en este proyecto.
 
 ---
-⌨️ por [ChuyGonzalez](https://github.com/ChuyGonzalez) 😊
+⌨️ por [**Chuy Gonzalez**](https://github.com/ChuyGonzalez) 😊
 
