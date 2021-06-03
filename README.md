@@ -36,8 +36,9 @@
   
 - **Documentación de API con POSTMAN** - 
 
-> [Descargar POSTMAN](https://www.getpostman.com/collections/0f05ba9c7af36440faa7)
-> [Ver documentación POSTMAN](https://documenter.getpostman.com/view/257435/TzY1iwom)
+> - [Descargar POSTMAN](https://www.getpostman.com/collections/0f05ba9c7af36440faa7)
+
+> - [Ver documentación POSTMAN](https://documenter.getpostman.com/view/257435/TzY1iwom)
 
 - **Diagrama de Base de Datos ER**: Debido a que la BD es NoSQL, la relación en tablas es logico.
 
