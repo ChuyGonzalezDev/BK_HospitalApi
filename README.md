@@ -1,8 +1,8 @@
 # API Hospital
 
-![https://github.com/ChuyGonzalez](images/logo.jpeg)
+![https://github.com/ChuyGonzalez](/images/logo.jpeg)
 
-## Proyecto Final - **Back-End** :robot:
+## Proyecto Final - **Back-End**
 
 **REST API Rest que contiene el CRUD para un HOSPITAL:** consulta, registro, actualización y borrado de Usuarios, Hospitales y Doctores.
 
@@ -30,9 +30,9 @@
 
 ![Arquitectura](/images/arquitectura.png)
   
-- **Tabla de Documentación de Diseño de métodos** - [Descargar Excel](/Documents/APIHospital.xlsx).
+- **Tabla de Documentación de Diseño de métodos** - [Descargar Excel](/documents/APIHospital.xlsx).
 
-- **Diagrama de Clases de API** - [Descargar Diagrama](/Documents/diagramClass.drawio).
+- **Diagrama de Clases de API** - [Descargar Diagrama](/documents/diagramClass.drawio).
   
 - **Documentación de API con POSTMAN** - [Descargar POSTMAN](https://www.getpostman.com/collections/0f05ba9c7af36440faa7)
 
@@ -40,7 +40,7 @@
 
 ![Arquitectura](/images/DBHospital_ER.png)
 
-- **Documentación de Pruebas Unitarias de API con POSTMAN** - [Descargar JSON](/Documents/ApiHospital.postman_test_run.json).
+- **Documentación de Pruebas Unitarias de API con POSTMAN** - [Descargar JSON](/documents/ApiHospital.postman_test_run.json).
 
 ## Construido con 🛠️
 
@@ -126,7 +126,7 @@
 
 Ejecutar los siguientes pasos y comandos en consola de MongoDB:
 
-1. Crear la Base de Datos con [**MongoDB - Create Cluster**](https://docs.atlas.mongodb.com/tutorial/create-mongodb-user-for-cluster).
+1. Crear la Base de Datos con [MongoDB - Create Cluster](https://docs.atlas.mongodb.com/tutorial/create-mongodb-user-for-cluster).
 2. Comando para mostrar las Bases de Datos:
 
     ```bash
@@ -171,10 +171,9 @@ Usamos [SemVer](http://semver.org/) para el versionado. Para ver todas las versi
 
 ## Autores ✒️
 
-- **Jesús González** - *Creación, diseño y desarrollo de Proyecto* - [**Chuy Gonzalez**](https://github.com/ChuyGonzalez).
+- **Jesús González** - *Creación, diseño y desarrollo de Proyecto* - [Chuy Gonzalez](https://github.com/ChuyGonzalez).
 
-También puedes mirar la lista de todos los [contribuyentes](https://github.com/ChuyGonzalez/BK_HospitalApi/graphs/contributors) quíenes han participado en este proyecto.
+También puedes mirar la lista de todos los [Contribuidores](https://github.com/ChuyGonzalez/BK_HospitalApi/graphs/contributors) quíenes han participado en este proyecto.
 
 ---
-⌨️ por [**Chuy Gonzalez**](https://github.com/ChuyGonzalez) 😊
-
+⌨️ por :robot: [Chuy Gonzalez](https://github.com/ChuyGonzalez) 😊
