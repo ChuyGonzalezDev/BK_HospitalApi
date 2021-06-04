@@ -11,7 +11,6 @@ import { doctorRouter } from './routes/Doctor';
 require('dotenv').config();
 
 async function main() {
-    //validateJWT;    
     /** Puerto */
     const port = process.env.PORT;
             
