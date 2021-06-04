@@ -2,7 +2,7 @@
 import express from 'express';
 import cors from 'cors';
 
-import { authRouter } from './routes/auth';
+import { authRouter } from './routes/Auth';
 import { userRouter } from './routes/Users';
 import { MongoConnection } from './db/Connection';
 import { hospitalRouter } from './routes/Hospital';
