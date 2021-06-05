@@ -51,6 +51,7 @@
 - [Node.JS](https://nodejs.org/en/) - El framework Node.JS.
 - [Mongoose](https://mongoosejs.com/) - ‎Modelado ‎‎de objetos MongoDB‎ elegante para ‎‎Node.JS‎
 - [TypeScript](https://www.typescriptlang.org/) - Tipeado de JavaScrit con ‎TypeScript.
+- [Heroku](https://devcenter.heroku.com/) - Publicada y alojada en **Heroku**.
 
 ## Comenzando 🚀
 
@@ -167,7 +168,9 @@ Ejecutar los siguientes pasos y comandos en consola de MongoDB:
 
 ## Despliegue 📦
 
-Para realiza el despligue por favor tome en cuenta los siguientes pasos: [Deploy-Keys](https://docs.github.com/en/developers/overview/managing-deploy-keys#deploy-keys)
+- Para realiza el despligue por favor tome en cuenta los siguientes pasos: [Deploy-Keys](https://docs.github.com/en/developers/overview/managing-deploy-keys#deploy-keys)
+
+- Encontraras la API publicda en [Heroku](https://api-node-hospital.herokuapp.com/). Si deseas desglegar tu API ve la siguiente [documentación](https://devcenter.heroku.com/).
 
 ## Versionado 📌
 
